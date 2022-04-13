@@ -13,7 +13,7 @@ public class Square extends Shape{
     //setter for variable side
     public void setSide(double side) {
         if (side <= 0){
-            System.err.println("Invalid side: " + side);
+            System.err.println("Invalid value: " + side);
             System.exit(1);
         }
         this.side = side;
@@ -21,7 +21,7 @@ public class Square extends Shape{
 
     // Construction call from parent class
     public Square(double side) {
-        super("Squire");
+        super("Square");
         setSide(side);
     }
 
