@@ -1,4 +1,4 @@
-package day_39Recap.cydeoTask;
+package day39_Recap.cydeoTask;
 
 public class Cydeo {
 
