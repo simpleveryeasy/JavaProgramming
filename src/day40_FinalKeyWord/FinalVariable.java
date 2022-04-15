@@ -30,7 +30,8 @@ public class FinalVariable {
 
         //obj.birtDay = "June/01"; can't reassign
 
-        //FinalVariable.name = "Pyton"; can't reassign
+        //FinalVariable.name = "Python"; can't reassign
         System.out.println(FinalVariable.name); //Batch 25
+        System.out.println(name); //Java
     }
 }
