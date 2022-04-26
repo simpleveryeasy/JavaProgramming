@@ -1,4 +1,4 @@
-package day43_Abstraction;
+package day43_Abstraction.car;
 
 public abstract class Car {
 
@@ -12,7 +12,7 @@ public abstract class Car {
         this.brand = brand;
         this.model = model;
         setColor(color);
-        if (year < 1886){
+        if (year < 1886){ //because year is final can't get setter for add conditions only construction can be used
             throw new RuntimeException("Invalid Year: " + year);
         }
         this.year = year;
@@ -61,5 +61,17 @@ public abstract class Car {
     }
 
     public abstract void start();
+
+
+    @Override
+    public String toString() {
+        return "Car{" +
+                "brand='" + brand + '\'' +
+                ", model='" + model + '\'' +
+                ", color='" + color + '\'' +
+                ", year=" + year +
+                ", price=" + price +
+                '}';
+    }
 }
 
