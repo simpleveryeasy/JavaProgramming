@@ -1,6 +1,6 @@
 package day44_Abstraction.animal;
 
-public final class Tiger extends Animal{
+public final class Tiger extends Animal implements WildAnimal{
 
 
 
@@ -13,5 +13,10 @@ public final class Tiger extends Animal{
     @Override
     public void eat() {
         System.out.println(getName() + " eats deer");
+    }
+
+    @Override
+    public void hunt() {
+        System.out.println(getName() + " hunts deer");
     }
 }
