@@ -22,13 +22,22 @@ public class CustomExceptions {
 
     public static void main(String[] args) {
 
-        //throw new FadyExceptions("It is a time for a lunch break");
+
+        //unchecked exception
+        /*try {
+            throw new FadyExceptions("It is a time for a lunch break");
+        }catch (FadyExceptions e){
+            e.printStackTrace();
+            System.out.println("catch block1");
+        }*/
+
         //checked exception
 
         try {
             throw new NoBreakException();
         } catch (NoBreakException e) {
             e.printStackTrace();
+            System.out.println("catch block2");
         }
 
     }
