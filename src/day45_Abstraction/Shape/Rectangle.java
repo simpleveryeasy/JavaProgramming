@@ -21,11 +21,11 @@ public class Rectangle extends Shape{
 
     @Override
     public double area() {
-        return 0;
+        return shortSide*longSide;
     }
 
     @Override
     public double perimeter() {
-        return 0;
+        return 2*(shortSide+longSide);
     }
 }
